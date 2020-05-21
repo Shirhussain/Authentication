@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h3>The total number of our User is {{count}}</h3>
+	<h2>Welcome to DAnishyar website dear {% if user.is_authenticated %} {{user.username}}{% else %} Visitero {% endif %}</h2>
+{% endblock content %}
